@@ -39,8 +39,24 @@ const Keyboard = {
                 });
             });
         });
-    },
+/**************************************************************************************/ 
+        document.querySelectorAll(".name_input").forEach(element => {
+            element.addEventListener("focus", () => {
+                this.open(element.value, currentValue => {
+                    element.value = currentValue;  
+                }); 
+            });    
+        }); 
 
+        document.querySelectorAll(".email_input").forEach (element => {
+            element.addEventListener("focus", () => {
+                this.open(element.value, currentValue => {
+                    element.value = currentValue;    
+                });    
+            });  
+        });
+    },
+/***************************************************************************************/
     _createKeys() {
         const fragment = document.createDocumentFragment();
         const keyLayout = [
