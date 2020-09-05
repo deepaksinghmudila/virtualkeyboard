@@ -10,35 +10,41 @@ body{
     height: 60vh;
     display: flex;
     justify-content: center;              
-    align-items: center;  
-    border:1px solid red;     
+    align-items: center; 
+ 
+  
 }
 .form-box {     
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    border:3px solid yellow;     
+    justify-content: space-evenly;    
+    
 }
 .row1 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;         
     padding-bottom: 2%;
-    border:2px solid green;
+  
+     
 }
-.row2,.row3 {
+.row2 {
     width:100%;
     display: flex;
     justify-content: center; 
     padding-bottom: 2%;
-    border:1px solid magenta;
+ 
 }
-.row3{          
-    border:4px solid brown;
+.row3 {
+    width:100%;
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 2%;
+      
 }
 .name_input {
-    width:48%;
+    width:50%;
     height: 7vh;
     color: black;
 }
@@ -47,20 +53,15 @@ body{
    height: 7vh;
 }
 textarea{
-    width:540px;
+    width:420px;
     height: 20vh;     
 }
 /**************************************************/
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 500px) {
     .form-box{
-        width:95%;
+        width:70%;
     }    
- }
- @media only screen and (max-width:260px){
-     .keyboard{
-           max-height: 60%;
-     }
- }
+ }  
 /***************************************************/
 .keyboard {
     position: fixed;
@@ -134,3 +135,5 @@ textarea{
 .keyboard__key--dark {
     background: rgba(0, 0, 0, 0.25);
 }
+/*****************************************************/
+ 
